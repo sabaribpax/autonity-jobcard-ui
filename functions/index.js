@@ -1,7 +1,7 @@
 const { onRequest } = require("firebase-functions/v2/https");
 const logger = require("firebase-functions/logger");
 
-exports.zohoProxy = onRequest({ cors: true }, async (request, response) => {
+exports.zohoProxy = onRequest({ cors: true, invoker: 'public' }, async (request, response) => {
   try {
     const apiRes = await fetch("https://www.zohoapis.in/creator/custom/autonity/getLiveJobCards?publickey=hndKfqAt3sns41W96ugad40RQ");
     if (!apiRes.ok) {
