@@ -3,7 +3,7 @@ import './App.css';
 
 // The refresh timer logic
 const REFRESH_INTERVAL_SECONDS = 180; // 3 minutes
-const API_URL = "https://api.codetabs.com/v1/proxy/?quest=https://www.zohoapis.in/creator/custom/autonity/getLiveJobCards?publickey=hndKfqAt3sns41W96ugad40RQ";
+const API_URL = "/api/jobcards";
 
 function getStatusConfig(statusStr) {
   if (!statusStr) return { label: 'UNKNOWN', class: 'status-draft' };
