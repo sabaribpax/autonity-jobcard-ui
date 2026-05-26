@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState, useCallback } from 'react';
 import './App.css';
+import logoImg from './assets/autonity-logo.png';
 
 // The refresh timer logic
 const REFRESH_INTERVAL_SECONDS = 180; // 3 minutes
@@ -115,7 +116,7 @@ function App() {
             <img 
               alt="Autonity Logo" 
               className="logo" 
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbq6JlcjuzVFfctGoIFu6iOKllAt5py6SKeRZTYWyMTz9oawwRBVOgP-mV8hUPd9hSWiqNVzd0zxj1R9ZJIRg1Zd8kHC_wi5szBm2CNd7huvyBz00pDaHsYYZO_X4Fsa4pHaEXEN1s0pCY_yoKBRttf_SqOYdlgzKOL6CuPdnQbo0QNg1x5hrZZuq59am70bi51rhFjh1GzqPC6wQnQn8jGtFzyprhkmm9eq0qEAh9Y25v5CeqVHu102gKRRX4UtQm5KPa21vprF9E"
+              src={logoImg}
             />
             <div>
               <h1 className="title">Live Fleet Tracker</h1>
